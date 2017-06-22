@@ -13,6 +13,10 @@
 		vertical-align: baseline;
 	}
 
+	.jif {
+		padding: 0px 0px;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
