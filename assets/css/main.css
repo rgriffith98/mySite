@@ -13,6 +13,18 @@
 		vertical-align: baseline;
 	}
 
+    blockquote {
+      padding: 20px;
+      font-size: 1.8em;  
+    }
+
+    cite {
+      font-size: 1.2em;
+      float: right;
+        background: url(quote.png) top left no-repeat;
+        color: white;
+    }
+
 
     .currpage {
         border-radius: 10px;
