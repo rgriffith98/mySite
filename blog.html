@@ -12,8 +12,23 @@
         <h1>The <strong>Infrequently Updated</strong> Blog.</h1>
     </header>
 	
-	
-	 
+	<!-- Lazy Load Script (Async) -->
+    <script>
+        (function() {
+            function async_load(){
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'http://yourdomain.com/script.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (window.attachEvent)
+                window.attachEvent('onload', async_load);
+            else
+                window.addEventListener('load', async_load, false);
+        })();
+     </script>
 	
     
     <div id="wrapper">
@@ -32,74 +47,90 @@
 	    </center>
 	    
         
-        <section id="main">
+    <section id="main">
             
-            <section class="thumbnails">
+    <section class="thumbnails">
             
-            <div>
-                <a href="blogs/bl1.html">
-                    <img src="images/writing.gif" alt="" />
-                    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">My Adventure with Writing</h3>
-                </a>
-		    
-		<a href="blogs/bl3.html">
-                    <img src="images/js.gif" alt="" />
-				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Making Art with the JavaScript Processing (p5)</h3>
-		</a>
-		    
-		<a href="blogs/bl7.html">
-                    <img src="images/hbeach.gif" alt="" />
-				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The Hunnington Dog Beach Trip</h3>
-		</a>
-                
-         <a href="blogs/bl9.html">
+    <div>
+        <a href="blogs/bl9.html">
                     <img src="images/litlife.jpg" alt="" />
 					<h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The Worst Book I Have Ever Read</h3>
         </a>
-		    
+        <a href="blogs/bl7.html">
+                <img src="images/hbeach.gif" alt="" />
+                <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The Hunnington Dog Beach Trip</h3>
+		</a>
+		<a href="blogs/bl3.html">
+                <img src="images/js.gif" alt="" />
+                <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Making Art with the JavaScript Processing (p5)</h3>
+		</a>
+        <a href="blogs/bl1.html">
+            <img src="images/writing.gif" alt="" />
+            <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">My Adventure with Writing</h3>
+        </a>
             </div>
 			
-            <div>
-                <a href="blogs/bl2.html">
-                    <img src="images/hack.gif" alt="" />
-					<h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Hacking for the First Time</h3>
-                </a>
-		    
-		        <a href="blogs/bl5.html">
-                    <img src="images/nyc.gif" alt="" />
-				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The New York City Trip</h3>
-                </a>
-                
-                <a href="blogs/bl10.html">
+        <div>
+            <a href="blogs/bl10.html">
                     <img src="images/bone.jpg" alt="" />
 					<h3 style="background-color:rgba(255, 215, 51, .6); color:white;">My First Graphic Novel</h3>
-                </a>
-            </div>
+            </a>
+            <a href="blogs/bl5.html">
+                    <img src="images/nyc.gif" alt="" />
+				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The New York City Trip</h3>
+            </a>
+            <a href="blogs/bl2.html">
+                <img src="images/hack.gif" alt="" />
+                <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Hacking for the First Time</h3>
+            </a>    
+        </div>
 								
-            <div>
-                <a href="blogs/bl4.html">
-                    <img src="images/goog.gif" alt="" />
-				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Google Games Washington D.C. 2017</h3>
-                </a>
-                
-		<a href="blogs/bl6.html">
-                    <img src="images/ther.jpg" alt="" />
-				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The Digital Theremin in p5</h3>
-                </a>
-		    
-		<a href="blogs/bl8.html">
-                    <img src="images/q.jpg" alt="" />
-				    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Get to Know You Questions Answered</h3>
-                </a>
-                
-                 <a href="">
-                    <img src="images/it.gif" alt="" />
-					<h3 style="background-color:rgba(255, 215, 51, .6); color:white;">In Preparation for the "It" Movie<br>(Blog Post Coming Soon...)</h3>
-                </a>
-		
-            </div>
+        <div>
+            <a href="">
+                <img src="images/it.gif" alt="" />
+                <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">In Preparation for the "It" Movie<br>(Blog Post Coming Soon...)</h3>
+            </a>
+            <a href="blogs/bl4.html">
+                <img src="images/goog.gif" alt="" />
+			    <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Google Games Washington D.C. 2017</h3>
+            </a>
+		    <a href="blogs/bl6.html">
+                <img src="images/ther.jpg" alt="" />
+                <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">The Digital Theremin in p5</h3>
+            </a>
+            <a href="blogs/bl8.html">
+                <img src="images/q.jpg" alt="" />
+		        <h3 style="background-color:rgba(255, 215, 51, .6); color:white;">Get to Know You Questions Answered</h3>
+            </a>		
+        </div>
+    
+    
+        <script>
+            function show(elementID) {
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+                ele.style.display = 'block';
+            }
+        </script>
+        
+        
             </section>
-        	<br>
+
+        <!--
+        <center>
+            <button class="currpage" onclick="show('Page1');">1</button>&emsp;
+            <button class="othrpage" onclick="show('Page2');">2</button>&emsp;
+            <button class="othrpage" onclick="show('Page3');">3</button>&emsp;
+        </center>
+        -->
+        <br>
 		<center>
             		<a href="#" class="button button-block button-rounded button-white button-large" style="height:50px; width:50%; color:white; background-color:rgb(255, 215, 51);"><i class="fa fa-hand-pointer-o"></i> Back to Top</a>
 		</center>
