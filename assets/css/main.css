@@ -13,6 +13,23 @@
 		vertical-align: baseline;
 	}
 
+    .baseBut {
+        border-radius: 10px;
+   
+        color: white;
+        background-color: rgb(50, 225, 50);
+        font-size: 20px;
+        font-family: Lobster;
+    }
+
+    .contBut {
+        border-radius: 10px;
+        width: 20%;
+        color: white;
+        background-color: rgb(50, 225, 50);
+        font-size: 20px;
+    }
+
     blockquote {
       padding: 20px;
       font-size: 1.8em;  
