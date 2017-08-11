@@ -16,9 +16,9 @@
     .baseBut {
         border-radius: 10px;
         color: white;
-        background-color: rgb(50, 225, 50);
-        font-size: 20px;
-        font-family: Lobster;
+        background-color: rgba(255, 215, 51, .6);
+        font-size: 25px;
+        width: 100%;
     }
 
     .contBut {
