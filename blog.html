@@ -234,7 +234,15 @@
         -->
         <br>
 		<center>
-            		<button class="baseBut"><a href="#"><i class="fa fa-hand-pointer-o"></i></a> Back to Top</button>
+            <script>
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+                    document.documentElement.scrollTop = 0; // For IE and Firefox
+                }
+            </script>
+            <button onclick="topFunction()" title="Back to top">
+                <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                &nbsp;Back to Top</button>
 		</center>
 		<br>
 		
