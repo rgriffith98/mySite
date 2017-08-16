@@ -13,35 +13,39 @@
 		vertical-align: baseline;
 	}
 
-
-/* Style the tab */
-div.tab {
-    overflow: hidden;
+div.scrollmenu {
+    background-color: #333;
+    overflow: hidden; /*change to auto to make scroll tabs*/
+    white-space: nowrap;
     border-radius: 5px;
     background-color: rgba(0, 102, 255, .3);
-    width: 100%;
 }
 
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
-    float: left;
+div.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    border-radius: 5px;
+    text-decoration: none;
     border: none;
     outline: none;
     cursor: pointer;
     color: white;
+    font-size: 18px;
     transition: 0.3s;
     width: 20%;
 }
 
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: rgba(255, 255, 255, .75);
-    color: black;
+@media only screen AND (max-width: 736px) { 
+      .mobile { 
+        display: none;
+      }
 }
 
-
-
+div.scrollmenu a:hover {
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+}
 
 
 
