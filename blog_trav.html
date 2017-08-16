@@ -1,0 +1,166 @@
+
+<html>
+
+    <head>
+        <title>Reece W. Griffith | Travel | Blog</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/blog.css" />
+    </head>
+
+    <header id="header">					
+        <h1>My <strong>Infrequently Updated</strong> Blog.</h1>
+    </header>
+    
+    
+    
+    <!-- Lazy Load Script (Async) -->
+    <script>
+        (function() {
+        function async_load(){
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://yourdomain.com/script.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+        }
+        if (window.attachEvent)
+        window.attachEvent('onload', async_load);
+        else
+        window.addEventListener('load', async_load, false);
+        })();
+    </script>
+
+    
+    
+    
+    <div id="wrapper">
+
+        
+        
+        <center>
+            <ul class="icons">
+                <li><a href="index.html" class="icon style2 fa fa-home" style="color:rgb(255, 215, 51)"><span class="label">Home</span></a><p>Home</p></li>
+                <li><a href="aboutMe.html" class="icon style2 fa fa-user" style="color:rgb(255, 215, 51)"><span class="label">About</span></a><p>About</p></li>
+                <li><a href="projects.html" class="icon style2 fa-rocket" style="color:rgb(255, 215, 51)"><span class="label">Projects</span></a><p>Projects</p></li>
+            </ul>
+        </center>
+
+        <center>
+            <div class="tab">
+                <a href="blog_tech.html"><button class="tablinks">Technology</button></a>
+                <a href="blog_ent.html"><button class="tablinks">Entertainment</button></a>
+                <button class="tablinks" style="color:black; background-color:gold">Travel</button>
+                <a href="blog_misc.html"><button class="tablinks">Misc.</button></a>
+                <a href="blog.html"><button class="tablinks">All</button></a>
+            </div>
+        </center>
+        
+        
+        <br>
+        
+
+        <section id="main">
+
+            <section class="thumbnails">
+
+            <div>
+                <a href="blogs/bl12.html">
+                <img src="images/bma.jpg" alt="" />
+                <h3 style="color:rgb(255, 215, 51)">The Baltimore Museum of Art</h3>
+                <span style="color:rgba(255, 255, 255, .6); padding:0">
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Museum
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Art
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Baltimore
+                </span>
+                <span style="color:gold">
+                <br><i color="red" class="fa fa-star" aria-hidden="true"></i>&nbsp;New
+                </span>
+                </a>
+            </div>
+
+
+
+            <div>
+            
+                <a href="blogs/bl7.html">
+                <img src="images/hbeach.gif" alt="" />
+                <h3 style="color:rgb(255, 215, 51)">The Hunnington Dog Beach Trip</h3>
+                <span style="color:rgba(255, 255, 255, .6); padding:0">
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Pets
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Travel
+                </span>
+                </a>
+            
+            </div>
+
+
+
+            <div>
+            
+                <a href="blogs/bl5.html">
+                <img src="images/nyc.gif" alt="" />
+                <h3 style="color:rgb(255, 215, 51)">The New York City Trip</h3>
+                <span style="color:rgba(255, 255, 255, .6); padding:0">
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Spring Break
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Travel
+                </span>
+                </a>
+            
+            </div>
+
+
+            <script>
+            function show(elementID) {
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+            alert("no such element");
+            return;
+            }
+            var pages = document.getElementsByClassName('page');
+            for(var i = 0; i < pages.length; i++) {
+            pages[i].style.display = 'none';
+            }
+            ele.style.display = 'block';
+            }
+            </script>
+
+
+            </section>
+
+            <!--
+            <center>
+            <button class="currpage" onclick="show('Page1');">1</button>&emsp;
+            <button class="othrpage" onclick="show('Page2');">2</button>&emsp;
+            <button class="othrpage" onclick="show('Page3');">3</button>&emsp;
+            </center>
+            -->
+            <br>
+            
+            <center>
+                <!--<script>
+                    function topFunction() {
+                    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+                    document.documentElement.scrollTop = 0; // For IE and Firefox
+                    }
+                </script>
+                <button onclick="topFunction()" title="Back to top">
+                    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                    &nbsp;Back to Top
+                </button>-->
+            </center>
+            
+            <br>
+
+        </section>
+
+
+    </div>
+
+
+</html>
