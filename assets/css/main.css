@@ -23,7 +23,6 @@ button {
     border-radius: 20px;
 }
 button:hover {
-    width: 40%;
     background-color: white;
     color: gold;
 }
