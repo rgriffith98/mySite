@@ -13,6 +13,14 @@
 		vertical-align: baseline;
 	}
 
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
 .button {
     background-color: gold; /* Green */
     border: none;
