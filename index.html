@@ -1,130 +1,39 @@
-<!DOCTYPE HTML>
-<!--
-	Created by Reece W. Griffith with some style templating from TEMPLATED.
--->
-<html>
-	<head>
-		<title>Reece W. Griffith | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="board" class="board"></div>
+<div class="info">
+    Search depth:
+    <select id="search-depth">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <br>
+    <span>Positions evaluated: <span id="position-count"></span></span>
+    <br>
+    <span>Time: <span id="time"></span></span>
+    <br>
+    <span>Positions/s: <span id="positions-per-s"></span> </span>
+    <br>
+    <br>
+    <div id="move-history" class="move-history">
+    </div>
+</div>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/chessboardjs/js/chess.js"></script>
+<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+<script src="script.js"></script>
+<script>
 
-				<!-- Header -->
-					<header id="header">
-                        
-						<h1>My <strong>Site</strong>.</h1>
-                        
-						<span class="avatar"><img src="images/circleMe.png" alt="Reece W. Griffith" /></span>
-                        
-						<ul class="icons">
-							<li><a href="blog.html" class="icon style2 fa fa-pencil" style="color:rgb(255, 215, 51)"><span class="label">Blog</span></a><p>Blog</p></li>
-                           
-							<li><a href="aboutMe.html" class="icon style2 fa fa-user" style="color:rgb(255, 215, 51)"><span class="label">About</span></a><p>About</p></li>
-                            
-                            <li><a href="projects.html" class="icon style2 fa-rocket" style="color:rgb(255, 215, 51)"><span class="label">Projects</span></a><p>Projects</p></li>
-							
-                        </ul>
-						
-
-			
-                        
-			<h1 style="color:white;">I am Reece <strong>W.</strong> Griffith</h1>
-                        
-                        <h2>Born in 1998. I'm a kid from Southern California who makes things. I'm still learning.</h2>
-			
-			<h2>"The secret of happiness is: Find something more important than you are and dedicate your life to it."<br>—Daniel C. Dennett</h2>
-			
-            <br>
-		
-			
-
-			<ul class="icons">
-				<li><a href="https://twitter.com/reecewgriffith" class="icon style2 fa fa-twitter" style="color:rgb(0, 172, 237)"><span class="label">Twitter</span></a><p>Twitter</p></li>
-                
-                <li><a href="https://www.linkedin.com/in/reecewgriffith/" class="icon style2 fa-linkedin" style="color:white"><span class="label">Linkedin</span></a><p>Linkedin</p></li>	
-            </ul>
-			
-			
-			<center>
-				<div display="inline-block">
-					
-						<a target="_blank" href="http://eepurl.com/cVCLq1">
-							<i class="fa fa-thumbs-up"></i>Subscribe
-						</a>
-	
-						&nbsp;
-						&nbsp;
-							
-						<a href="mailto:rgriff43@jhu.edu" >
-							<i class="fa fa-envelope-o"></i>&nbsp;Contact
-						</a>
-					
-						&nbsp;
-						&nbsp;
-							
-						<a href="accessibility.html" >
-							<i class="fa fa-universal-access"></i>&nbsp;Accessibility
-						</a>
-					
-				</div> 
-			</center>
-            
-			</header>
-			
-		
-
-
-			<br>
-				
-		<center>
-			<span>Share this Site</span>
-			<div display="inline-block">
-				<a class="twitter-share-button" target="_blank"
-				   href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20website!%20http://reecewgriffith.com">
-				    <i class="fa fa-twitter" aria-hidden="true"></i></a>
-				&nbsp;
-				&nbsp;
-				<a href="https://www.facebook.com/sharer/sharer.php?u=http://reecewgriffith.com" target="_blank">
-				    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-				</a>
-				&nbsp;
-				&nbsp;
-				<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://reecewgriffith.com" target="_blank">
-				    <i class="fa fa-linkedin" aria-hidden="true"></i>
-				</a>
-			</div> 
-		</center>
-
-		
-				
-			<br>
-				<!-- Footer -->
-					<footer id="footer">
-						<span>Last Update: October 10, 2019</span>
-						<br>
-						<span>by Reece W. Griffith</span>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-			<script type="text/javascript">
-			var _userway_config = {
-			account: 'YyYPsv2XoC'
-			};
-			</script>
-			<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
-	</body>
+</script>
+</body>
 </html>

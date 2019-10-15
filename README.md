@@ -1,17 +1,8 @@
-# reecewgriffith.com
-my personal website
+# Simple chess AI
 
-## Setup
-- Hosted through github pages.
-- Domain purchased from namecheap.com (about ~$15 a year with security)
-- Used youtube tutorial to set up namecheap specific domain (for a custom domain, very simple)
-- takes about 5 minutes to initialize githib pages site with custom domain name
-- ~ 15 seconds for update to occur when updating html, css, js, ect. through github repo
+A simple chess algorithm with alpha-beta pruning and board evaluation with piece-square tables.
 
-## Features
-- "Homepage" with short description
-- "Blog" Page with linked posts
-- "Projects" Page (with lin to github hosted source code)
-- A detailed "About" page (has a link to complete résumé)
+Related blogpost: https://medium.freecodecamp.com/simple-chess-ai-step-by-step-1d55a9266977
 
-NOTE: some css taken from VISUALIZE
+Playable on https://jsfiddle.net/q76uzxwe/1/
+# ChessEngine
